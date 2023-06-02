@@ -120,9 +120,11 @@ h4{
 .about img {
     height: auto;
     width: 430px;
+    margin: 0px 20px;
 }
 .about-text{
     width: 550px;
+    margin: 0px 20px;
 }
 .main{
     width: 1130px;
