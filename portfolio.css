@@ -4,13 +4,18 @@
     padding: 0;
     margin: 0;
 }
+body{
+    background-color:#000;
+}
 .hero {
     height: 100vh;
     width: 100%;
-    background-image: url(./Images/back\ ground.jpeg);
-    background-size: cover;
-    background-position: center;
+    background-color: #101010;
+    /* background-image: url(./Images/back\ ground.jpeg); */
+    background-size:contain;
+    background-position: right;
     background-repeat: no-repeat;
+    
 }
 nav {
     display: flex;
@@ -21,7 +26,7 @@ nav {
     padding-right: 8% ;
 }
 .logo {
-    color: #fff;
+    color: #e77045;
     font-size: 35px;
     letter-spacing: 1px;
     cursor: pointer;
@@ -32,7 +37,7 @@ nav ul li {
     padding:10px 25px;
 }
 nav ul li a {
-    color: #fff;
+    color: #f1e3e5;
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
@@ -42,7 +47,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 2px;
-    background-color: #f9004d;
+    background-color: #e77045;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -53,8 +58,8 @@ nav ul li a:hover::after {
     
 }
 .btn {
-    background-color: #f9004d;
-    color:#fff;
+    background-color: #e77045;
+    color:#f1e3e5;
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
@@ -72,13 +77,13 @@ nav ul li a:hover::after {
     transform: translateY(-50%);
 }
 h1 {
-    color: #fff;
+    color: #f1e3e5;
     margin: 20px 0px;
     font-size: 75px;
 
 }
 h3{
-    color: #fff;
+    color: #f1e3e5;
     font-size: 25px;
     margin-bottom: 50px;
 }
@@ -96,7 +101,7 @@ h4{
     display: inline-block;
     width: 100%;
     padding: 14px 130px 14px 15px;
-    border: 2px solid #f9004d;
+    border: 2px solid #e77045;
     border-radius: 30px;
 }
 .newsletter form input:last-child {
@@ -106,8 +111,8 @@ h4{
     border: none;
     padding: 10px 30px;
     border-radius: 30px;
-    background-color: #f9004d;
-    color: #fff;
+    background-color: #e77045;
+    color: #f1e3e5;
     box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585 ;
     top: 6px;
     right: 6px;
@@ -135,23 +140,23 @@ h4{
     justify-content: space-around;
 }
 .about-text h2{
-    color: #fff;
+    color: #f1e3e5;
     font-size: 75px;
     text-transform: capitalize;
     margin-bottom: 20px;
 }
 .about-text h5{
-    color: #fff;
+    color: #f1e3e5;
     letter-spacing: 2px;
     font-size: 22px;
     margin-bottom: 25;
     text-transform: capitalize;
 }
 span{
-    color: #f9004d;
+    color: #e77045;
 }
 .codecademy{
-    color: #f9004d;
+    color: #e77045;
     text-decoration: none;
     cursor: pointer;
 }
@@ -163,8 +168,8 @@ span{
     margin-bottom: 45px;
 }
 button{
-    background-color: #f9004d;
-    color: #fff;
+    background-color: #e77045;
+    color: #f1e3e5;
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
@@ -174,7 +179,7 @@ button{
 }
 button:hover{
     background-color: transparent;
-    border: 2px solid #f9004d;
+    border: 2px solid #e77045;
     cursor: pointer;
 }
 .service{
@@ -183,7 +188,7 @@ button:hover{
     padding: 100px 0px;
 }
 .title h2 {
-    color: #fff;
+    color: #f1e3e5;
     font-size: 75px;
     width: 1130px;
     margin: 30px auto;
@@ -211,10 +216,10 @@ button:hover{
     display: block;
     text-align: center;
     margin: 25px 0px;
-    color: #f9004d;
+    color: #e77045;
 }
 h5{
-    color: #fff;
+    color: #f1e3e5;
     font-size: 23px;
     margin-bottom: 15px;
 }
@@ -224,9 +229,12 @@ h5{
     line-height: 27px;
     margin-bottom: 25px;
 }
+.map_frame{
+    margin: 10px 0px;
+}
 .card .button{
-    background-color: #f9004d;
-    color: #fff;
+    background-color: #e77045;
+    color: #f1e3e5;
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
@@ -236,7 +244,7 @@ h5{
 }
 .card .button:hover{
     background-color: transparent;
-    border: 2px solid #f9004d;
+    border: 2px solid #e77045;
     cursor: pointer;
 }
 .contact-me{
@@ -249,14 +257,14 @@ h5{
     justify-content: center;
 }
 .contact-me p{
-    color: #fff;
+    color: #f1e3e5;
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 25px;
 }
 .contact-me .button-two{
-    background-color: #f9004d;
-    color: #fff;
+    background-color: #e77045;
+    color: #f1e3e5;
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
@@ -266,7 +274,7 @@ h5{
 }
 .contact-me .button-two:hover{
     background-color: transparent;
-    border: 2px solid #f9004d;
+    border: 2px solid #e77045;
     cursor: pointer;
 }
 footer{
@@ -282,12 +290,12 @@ footer{
 }
 footer p:nth-child(1) {
     font-size: 30px;
-    color:#fff;
+    color: #f1e3e5;
     margin-bottom: 20px;
     font-weight: bold;
 }
 footer p:nth-child(2){
-    color: #fff;
+    color: #f1e3e5;
     font-size: 17px;
     width: 500px;
     text-align: center;
@@ -302,10 +310,10 @@ footer p:nth-child(2){
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #f9004d;
+    background: #e77045;
     border-radius: 50%;
     margin: 22px 10px;
-    color: #fff;
+    color: #f1e3e5;
     text-decoration: none;
     font-size: 20px;
 }
@@ -315,7 +323,7 @@ footer p:nth-child(2){
 }
 .end {
     position: absolute;
-    color: #fff;
+    color: #f1e3e5;
     bottom: 35px;
     font-size: 14px;
 }
