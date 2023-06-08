@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/fdeb912ac0.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- hero section -->
@@ -43,8 +44,33 @@
             <div class="about-text">
                 <h2>About Me</h2>
                 <h5>Developer <span>& designer</span></h5>
-                <p>Iam a junior Front-end web developer. Imake clean code and also make the website more and more interactive with web animations. I can provide clean code and pixel perfect design. A responsive design makes your website accessible to all users, regardless of thier device.</p>
-                <button type="button">Contact me</button>
+                <p>I am a junior Front-end web developer. I make clean code and also make the website more and more interactive with web animations. I can provide clean code and pixel perfect design. A responsive design makes your website accessible to all users, regardless of thier device.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Building Android/IOS Apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022 - Current</span><br>Front-End Engineering at <a class="codecademy" href="https://www.codecademy.com/learn">CodeCademy</a></li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Building Android/IOS Apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 - Current</span><br>Front-End Engineering at <a class="codecademy" href="https://www.codecademy.com/learn">CodeCademy</a></li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Building Android/IOS Apps</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -55,7 +81,7 @@
         </div>
         <div class="box">
             <div class="card">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-code"></i>
                 <h5>Web Design</h5>
                 <div class="pra">
                     <p>Designing and developing websites with an attractive and engaging user experience.</p>
@@ -111,9 +137,10 @@
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
             <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
         </div>
         <p class="end">&copy; Joe Kirabo Semanda</p>
      </footer>
-    
+     <script src="portfolio.js"></script>
 </body>
 </html>
