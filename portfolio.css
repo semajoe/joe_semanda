@@ -136,7 +136,7 @@ h4{
     padding: 100px 0px;
     background-color: #191919;
 }
-.about .about-image{
+.main .about-image{
     width: 30%;
 }
 .about-image img {
@@ -183,21 +183,6 @@ span{
     font-size: 18px;
     margin-bottom: 20px;
 }
-/* button{
-    background-color: #e77045;
-    color: #f1e3e5;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 13px 30px;
-    border-radius: 30px;
-    transition: .4s;
-}
-button:hover{
-    background-color: transparent;
-    border: 2px solid #e77045;
-    cursor: pointer;
-} */
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
@@ -438,14 +423,18 @@ nav .fas{
         
         
     }
+    .hero{
+        background-size: cover;
+    }
     .logo{
-        font-size: 20px;
+        font-size: 30px;
     }
     h1{
-        font-size: 40px;
+        font-size: 60px;
     }
     h3{
-        font-size: 18px;
+        font-size: 20px;
+        margin-bottom: 30px;
     }
     h4{
         margin-top: 70%;
@@ -470,6 +459,8 @@ nav .fas{
     nav ul li{
         display: block;
         Margin: 25px;
+        /* ! */
+        padding: 5px 10px;
     }
     nav ul .fas{
         position: absolute;
@@ -484,21 +475,26 @@ nav .fas{
       /* about section */
       .about.main{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         margin: 10px;
-       
-
       }
-    .about-image {
-        display: block;
+      .main .about-image{
         width: 100%;
-        /* margin: 20px 0px; */
+    }
+      .about .about-image, .about .about-text{
+        width: 100%;
+        margin: 0;
+      }
+      .about-image img {
+        margin: 20px 0;
+        
       }
      .about-text h2{
-        font-size: 30px;
+        font-size: 60px;
      }
      .about-text h5 {
-        font-size: 18px;
+        font-size: 20px;
+        margin-bottom: 20px;
       }
      .about-text {
         width: 100%;
@@ -506,143 +502,5 @@ nav .fas{
       }
       .about-text p {
         font-size: 16px;
-      }
-    
- 
+      } 
 }
-
-/* CSS
-To make your code responsive using media queries, you can add the following CSS code:
-
-```css */
-/* Mobile Styles */
-/* @media screen and (max-width: 600px) {
-  .hero {
-    background-size: cover;
-  }
-  .logo {
-    font-size: 25px;
-  }
-  nav ul li {
-    padding: 10px;
-  }
-  h1 {
-    font-size: 50px;
-  }
-  h3 {
-    font-size: 18px;
-  }
-  .newsletter form {
-    width: 100%;
-    max-width: 100%;
-  }
-  .newsletter form input:first-child {
-    padding: 14px 100px 14px 15px;
-  }
-  .about img {
-    width: 100%;
-    margin: 20px 0px;
-  }
-  .about-text {
-    width: 100%;
-    margin: 20px 0px;
-  }
-  .about-text h2 {
-    font-size: 50px;
-  }
-  .about-text h5 {
-    font-size: 18px;
-  }
-  .about-text p {
-    font-size: 16px;
-  }
-}
-
-/* Tablet Styles */
-/* @media screen and (min-width: 601px) and (max-width: 1024px) {
-  .hero {
-    background-size: cover;
-  }
-  .logo {
-    font-size: 30px;
-  }
-  nav ul li {
-    padding: 10px 15px;
-  }
-  h1 {
-    font-size: 60px;
-  }
-  h3 {
-    font-size: 20px;
-  }
-  .newsletter form {
-    width: 100%;
-    max-width: 100%;
-  }
-  .newsletter form input:first-child {
-    padding: 14px 120px 14px 15px;
-  }
-  .about img {
-    width: 100%;
-    margin: 20px 0px;
-  }
-  .about-text {
-    width: 100%;
-    margin: 20px 0px;
-  }
-  .about-text h2 {
-    font-size: 60px;
-  }
-  .about-text h5 {
-    font-size: 20px;
-  }
-  .about-text p {
-    font-size: 18px;
-  }
-}
-
-/* Desktop Styles */
-/* @media screen and (min-width: 1025px) {
-  .hero {
-    background-size: contain;
-  }
-  .logo {
-    font-size: 35px;
-  }
-  nav ul li {
-    padding: 10px 25px;
-  }
-  h1 {
-    font-size: 75px;
-  }
-  h3 {
-    font-size: 25px;
-  }
-  .newsletter form {
-    width: 380px;
-    max-width: 100%;
-  }
-  .newsletter form input:first-child {
-    padding: 14px 130px 14px 15px;
-  }
-  .about img {
-    width: 430px;
-    margin: 0px 20px;
-  }
-  .about-text {
-    width: 550px;
-    margin: 0px 20px;
-  }
-  .about-text h2 {
-    font-size: 75px;
-  }
-  .about-text h5 {
-    font-size: 22px;
-  }
-  .about-text p {
-    font-size: 18px;
-  }
-}  */
-
-
- 
