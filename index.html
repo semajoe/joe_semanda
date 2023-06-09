@@ -12,19 +12,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/fdeb912ac0.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <!-- hero section -->
     <div class="hero">
-        <nav>
+        <header>
             <h2 class="logo">My Portfolio</h2>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#location">My Location</a></li>
-                <li><a href="#services">My Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul> 
-            <a href="#" class="btn">Subscribe</a>
-        </nav>
+            <nav>
+                <ul id="side-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#location">My Location</a></li>
+                    <li><a href="#services">My Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
+                </ul> 
+                <!-- <a href="#" class="btn">Subscribe</a> -->
+                
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </header>
         <div class="content">
             <h4>Hello. My name is</h4>
             <h1>Joe Semanda</h1>
@@ -40,7 +46,9 @@
     <!-- About Section -->
     <section class="about">
         <div class="main">
-            <img src="./Images/bw.jpg" alt="">
+            <div class="about-image">
+                <img src="./Images/bw.jpg" alt="">
+            </div>
             <div class="about-text">
                 <h2>About Me</h2>
                 <h5>Developer <span>& designer</span></h5>

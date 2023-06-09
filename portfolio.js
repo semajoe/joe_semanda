@@ -12,3 +12,13 @@ function opentab(tabname){
     event.currentTarget.classList.add('active-link');
     document.getElementById(tabname).classList.add('active-tab');
 }
+
+// Media Queries Javascript
+var menus = document.getElementById('side-menu')
+
+function openmenu(){
+    menus.style.right = '0'
+}
+function closemenu(){
+    menus.style.right = '-200px'
+}

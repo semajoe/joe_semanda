@@ -5,7 +5,7 @@
     margin: 0;
 }
 body{
-    background-color:#000;
+    background-color:#101010;
 }
 
 .hero {
@@ -14,23 +14,27 @@ body{
     background-color: #101010;
     /* background-image: url(./Images/back\ ground.jpeg); */
     background-size:contain;
-    background-position: right;
+    background-position: center;
     background-repeat: no-repeat;
     
 }
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-top: 45px;
+header{
+    display: inline-block;
     padding-left: 8%;
-    padding-right: 8% ;
+    padding-right: 8%;
+    margin-top: 45px;
+    width: 100%;
+    
+}
+nav {
+  float: right;
 }
 .logo {
     color: #e77045;
     font-size: 35px;
     letter-spacing: 1px;
     cursor: pointer;
+    float: left;
 }
 nav ul li {
     list-style-type: none;
@@ -74,7 +78,8 @@ nav ul li a:hover::after {
 .content {
     position: absolute;
     top: 50%;
-    left: 8%;
+    padding-left: 8%;
+    padding-right: 8%;
     transform: translateY(-50%);
 }
 p, i{
@@ -101,7 +106,7 @@ h4{
     font-size: 20px;
 }
 .newsletter form {
-    width: 380px;
+    width: 320px;
     max-width: 100%;
     position: relative;
 }
@@ -125,24 +130,27 @@ h4{
     top: 6px;
     right: 6px;
 }
+/* ------about section ------ */
 .about {
-    width: 100%;
+    max-width: 100%;
     padding: 100px 0px;
     background-color: #191919;
 }
-.about img {
+.about .about-image{
+    width: 30%;
+}
+.about-image img {
     height: auto;
-    width: 430px;
+    width: 100%;
     margin: 0px 20px;
 }
 .about-text{
-    width: 550px;
+    width: 60%;
     margin: 0px 20px;
 }
 .main{
-    width: 1130px;
-    max-width: 95%;
-    margin: o auto;
+    width: 100%;
+    margin: 10px auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -239,7 +247,7 @@ button:hover{
 .title h2 {
     color: #f1e3e5;
     font-size: 75px;
-    width: 1130px;
+    max-width: 100%;
     margin: 30px auto;
     text-align: center;
 }
@@ -346,7 +354,7 @@ footer p:nth-child(1) {
 footer p:nth-child(2){
     color: #f1e3e5;
     font-size: 17px;
-    width: 500px;
+    width: 100%;
     text-align: center;
     line-height: 26px;
 }
@@ -419,6 +427,222 @@ footer p:nth-child(2){
     border-radius: 6px;
     color: #f1e3e5;
 }
+nav .fas{
+    display: none;
+}
+ /* CSS for small Screens */
+ @media only screen and (max-width: 600px){
+    body{
+        background: #101010;
+        background-size: cover;
+        
+        
+    }
+    .logo{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    h4{
+        margin-top: 70%;
+    }
+
+    nav .fas{
+        display: block;
+        font-size: 25px;
  
+    }
+    nav ul{
+        background: #e77045;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top:50px ;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        Margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 50px ;
+        cursor: pointer;
+    }
+    .newsletter form {
+        width: 100%;
+        max-width: 100%;
+      }
+      /* about section */
+      .about.main{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+       
+
+      }
+    .about-image {
+        display: block;
+        width: 100%;
+        /* margin: 20px 0px; */
+      }
+     .about-text h2{
+        font-size: 30px;
+     }
+     .about-text h5 {
+        font-size: 18px;
+      }
+     .about-text {
+        width: 100%;
+        margin: 20px 0px;
+      }
+      .about-text p {
+        font-size: 16px;
+      }
+    
+ 
+}
+
+/* CSS
+To make your code responsive using media queries, you can add the following CSS code:
+
+```css */
+/* Mobile Styles */
+/* @media screen and (max-width: 600px) {
+  .hero {
+    background-size: cover;
+  }
+  .logo {
+    font-size: 25px;
+  }
+  nav ul li {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .newsletter form {
+    width: 100%;
+    max-width: 100%;
+  }
+  .newsletter form input:first-child {
+    padding: 14px 100px 14px 15px;
+  }
+  .about img {
+    width: 100%;
+    margin: 20px 0px;
+  }
+  .about-text {
+    width: 100%;
+    margin: 20px 0px;
+  }
+  .about-text h2 {
+    font-size: 50px;
+  }
+  .about-text h5 {
+    font-size: 18px;
+  }
+  .about-text p {
+    font-size: 16px;
+  }
+}
+
+/* Tablet Styles */
+/* @media screen and (min-width: 601px) and (max-width: 1024px) {
+  .hero {
+    background-size: cover;
+  }
+  .logo {
+    font-size: 30px;
+  }
+  nav ul li {
+    padding: 10px 15px;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .newsletter form {
+    width: 100%;
+    max-width: 100%;
+  }
+  .newsletter form input:first-child {
+    padding: 14px 120px 14px 15px;
+  }
+  .about img {
+    width: 100%;
+    margin: 20px 0px;
+  }
+  .about-text {
+    width: 100%;
+    margin: 20px 0px;
+  }
+  .about-text h2 {
+    font-size: 60px;
+  }
+  .about-text h5 {
+    font-size: 20px;
+  }
+  .about-text p {
+    font-size: 18px;
+  }
+}
+
+/* Desktop Styles */
+/* @media screen and (min-width: 1025px) {
+  .hero {
+    background-size: contain;
+  }
+  .logo {
+    font-size: 35px;
+  }
+  nav ul li {
+    padding: 10px 25px;
+  }
+  h1 {
+    font-size: 75px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  .newsletter form {
+    width: 380px;
+    max-width: 100%;
+  }
+  .newsletter form input:first-child {
+    padding: 14px 130px 14px 15px;
+  }
+  .about img {
+    width: 430px;
+    margin: 0px 20px;
+  }
+  .about-text {
+    width: 550px;
+    margin: 0px 20px;
+  }
+  .about-text h2 {
+    font-size: 75px;
+  }
+  .about-text h5 {
+    font-size: 22px;
+  }
+  .about-text p {
+    font-size: 18px;
+  }
+}  */
 
 
+ 
