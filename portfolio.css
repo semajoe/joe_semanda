@@ -499,6 +499,16 @@ nav .fas{
         padding: 10px;
         text-align: center;
       }
+      .container .row{
+        flex-direction: column;
+      }
+      form .btn.btn-2{
+        
+      }
+      #contact{
+        margin-bottom: 40px;
+      }
+      
     
  
 }
