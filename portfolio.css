@@ -4,6 +4,9 @@
     padding: 0;
     margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color:#101010;
 }
@@ -415,7 +418,16 @@ footer p:nth-child(2){
 nav .fas{
     display: none;
 }
+#msg{
+    color:#858585 ;
+    margin-top: -5px;
+    display: block;
+}
+
+
  /* CSS for small Screens */
+
+
  @media only screen and (max-width: 600px){
     body{
         background: #101010;
@@ -502,13 +514,7 @@ nav .fas{
       .container .row{
         flex-direction: column;
       }
-      form .btn.btn-2{
-        
-      }
       #contact{
         margin-bottom: 40px;
       }
-      
-    
- 
 }
