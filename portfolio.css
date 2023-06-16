@@ -15,9 +15,10 @@ body{
     height: 100vh;
     width: 100%;
     background-color: #101010;
-    /* background-image: url(./Images/back\ ground.jpeg); */
-    background-size:contain;
-    background-position: center;
+    background-image: url(./Images/desktop\ background.jpg);
+    background-size:cover;
+    background-position: fixed;
+
     background-repeat: no-repeat;
     
 }
@@ -84,6 +85,9 @@ nav ul li a:hover::after {
     padding-left: 8%;
     padding-right: 8%;
     transform: translateY(-50%);
+}
+.content h3{
+    width: 60%;
 }
 p, i{
      color: #f1e3e5;
@@ -435,11 +439,18 @@ nav .fas{
         
         
     }
+    .hero{
+        background-image: url(./Images/mobile\ background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+       
+    }
     .logo{
         font-size: 20px;
     }
     h1{
         font-size: 40px;
+        text-shadow: 1px 1px 2px #101010, 0 0 1em #101010, 0 0 0.2em #101010;
     }
     h3{
         font-size: 18px;
@@ -477,6 +488,9 @@ nav .fas{
     .newsletter form {
         width: 100%;
         max-width: 100%;
+      }
+      .content h3{
+        text-shadow:1px 1px 2px #101010, 0 0 1em #101010, 0 0 0.2em #101010;
       }
       /* about section */
     
