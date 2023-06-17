@@ -81,14 +81,12 @@ nav ul li a:hover::after {
 }
 .content {
     position: absolute;
-    top: 50%;
+    top: 70%;
     padding-left: 8%;
     padding-right: 8%;
     transform: translateY(-50%);
 }
-.content h3{
-    width: 60%;
-}
+
 p, i{
      color: #f1e3e5;
     text-decoration: none;
@@ -106,6 +104,7 @@ h3{
     color: #f1e3e5;
     font-size: 25px;
     margin-bottom: 50px;
+    text-shadow:1px 1px 2px #101010, 0 0 1em #101010, 0 0 0.2em #101010;
 }
 h4{
     color: #fcfc;
@@ -457,6 +456,9 @@ nav .fas{
     }
     h4{
         margin-top: 70%;
+    }
+    .content{
+        top: 50%;
     }
 
     nav .fas{
