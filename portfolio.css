@@ -66,6 +66,10 @@ nav ul li a:hover::after {
     width: 100%;
     
 }
+#greetings{
+    font-size: 2em;
+}
+
 .btn {
     background-color: #e77045;
     color:#f1e3e5;
