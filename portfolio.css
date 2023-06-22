@@ -537,4 +537,7 @@ nav .fas{
       #contact{
         margin-bottom: 40px;
       }
+      #greetings{
+        display: none;
+      }
 }
