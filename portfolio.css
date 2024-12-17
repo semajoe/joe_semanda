@@ -8,14 +8,14 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color:#101010;
+    background-color:#254336;
 }
 
 .hero {
     height: 100vh;
     width: 100%;
-    background-color: #101010;
-    background-image: url(./Images/desktop\ background.jpg);
+    background-color: #254336;
+    /* background-image: url(./Images/desktop\ background.jpg); */
     background-size:cover;
     background-position: fixed;
 
@@ -34,7 +34,7 @@ nav {
   float: right;
 }
 .logo {
-    color: #e77045;
+    color: #B7B597;
     font-size: 35px;
     letter-spacing: 1px;
     cursor: pointer;
@@ -56,7 +56,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 2px;
-    background-color: #e77045;
+    background-color: #B7B597;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -71,7 +71,7 @@ nav ul li a:hover::after {
 }
 
 .btn {
-    background-color: #e77045;
+    background-color: #B7B597;
     color:#f1e3e5;
     text-decoration: none;
     border: 2px solid transparent;
@@ -102,16 +102,17 @@ h1 {
     color: #f1e3e5;
     margin: 20px 0px;
     font-size: 75px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.169);
 
 }
 h3{
     color: #f1e3e5;
     font-size: 25px;
     margin-bottom: 50px;
-    text-shadow:1px 1px 2px #101010, 0 0 1em #101010, 0 0 0.2em #101010;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.169);
 }
 h4{
-    color: #fcfc;
+    color: #DAD3BE;
     letter-spacing: 2px;
     font-size: 20px;
 }
@@ -124,7 +125,7 @@ h4{
     display: inline-block;
     width: 100%;
     padding: 14px 130px 14px 15px;
-    border: 2px solid #e77045;
+    border: 2px solid #B7B597;
     border-radius: 30px;
 }
 .newsletter form input:last-child {
@@ -134,7 +135,7 @@ h4{
     border: none;
     padding: 10px 30px;
     border-radius: 30px;
-    background-color: #e77045;
+    background-color: #B7B597;
     color: #f1e3e5;
     box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585 ;
     top: 6px;
@@ -144,7 +145,7 @@ h4{
 .about {
     max-width: 100%;
     padding: 100px 0px;
-    background-color: #191919;
+    background-color: #6B8A7A;
 }
 .about .about-image{
     min-width: 30%;
@@ -159,6 +160,9 @@ h4{
 .about-text{
     margin-left: 20px;
     padding: 20px;
+}
+.about-text p {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.169);
 }
 .main{
     width: 100%;
@@ -179,15 +183,15 @@ h4{
     text-transform: capitalize;
 }
 span{
-    color: #e77045;
+    color: #B7B597;
 }
 .codecademy{
-    color: #e77045;
+    color: #B7B597;
     text-decoration: none;
     cursor: pointer;
 }
 .about-text p{
-    color:#fcfc;
+    color:#DAD3BE;
     letter-spacing: 1px;
     line-height: 28px;
     font-size: 18px;
@@ -212,7 +216,7 @@ span{
     content: '';
     width: 0;
     height: 3px;
-    background: #e77045;
+    background: #B7B597;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -235,7 +239,7 @@ span{
     display: block;
 }
 .service{
-    background: #101010;
+    background:#254336;
     width: 100%;
     padding: 100px 0px;
 }
@@ -256,7 +260,7 @@ span{
     height: 365px;
     width: 335px;
     padding: 20px 35px;
-    background: #191919;
+    background: #6B8A7A;
     border-radius: 20px;
     margin: 15px;
     position: relative;
@@ -268,7 +272,7 @@ span{
     display: block;
     text-align: center;
     margin: 25px 0px;
-    color: #e77045;
+    color: #B7B597;
 }
 h5{
     color: #f1e3e5;
@@ -276,7 +280,7 @@ h5{
     margin-bottom: 15px;
 }
 .pra p{
-    color: #fcfc;
+    color: #DAD3BE;
     font-size: 16px;
     line-height: 27px;
     margin-bottom: 25px;
@@ -285,7 +289,7 @@ h5{
     margin: 10px 0px;
 }
 .card .button{
-    background-color: #e77045;
+    background-color: #B7B597;
     color: #f1e3e5;
     text-decoration: none;
     border: 2px solid transparent;
@@ -296,13 +300,13 @@ h5{
 }
 .card .button:hover{
     background-color: transparent;
-    border: 2px solid #e77045;
+    border: 2px solid #B7B597;
     cursor: pointer;
 }
 .contact-me{
     width: 100%;
     height: 290px;
-    background: #191919;
+    background: #6B8A7A;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -315,7 +319,7 @@ h5{
     margin-bottom: 25px;
 }
 .contact-me .button-two{
-    background-color: #e77045;
+    background-color: #B7B597;
     color: #f1e3e5;
     text-decoration: none;
     border: 2px solid transparent;
@@ -326,14 +330,14 @@ h5{
 }
 .contact-me .button-two:hover{
     background-color: transparent;
-    border: 2px solid #e77045;
+    border: 2px solid #B7B597;
     cursor: pointer;
 }
 footer{
     position: relative;
     width: 100%;
     height: 400px;
-    background: #101010;
+    background: #254336;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -362,7 +366,7 @@ footer p:nth-child(2){
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #e77045;
+    background: #B7B597;
     border-radius: 50%;
     margin: 22px 10px;
     color: #f1e3e5;
@@ -398,7 +402,7 @@ footer p:nth-child(2){
     margin: 10px;
 }
 .contact-left p i{
-    color: #e77045;
+    color: #B7B597;
     margin-right: 10px;
     font-size: 25px;
     line-height: 1.5;
@@ -437,7 +441,7 @@ nav .fas{
 
  @media only screen and (max-width: 600px){
     body{
-        background: #101010;
+        background: #254336;
         background-size: cover;
         
         
