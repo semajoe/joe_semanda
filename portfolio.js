@@ -35,11 +35,12 @@ function opentab(tabname){
 // Media Queries Javascript
 var menus = document.getElementById('side-menu')
 
-function openmenu(){
-    menus.style.right = '0';
-}  
-function closemenu(){
-    menus.style.right = '-200px';
+function openmenu() {
+    document.getElementById("side-menu").style.right = "0";
+}
+
+function closemenu() {
+    document.getElementById("side-menu").style.right = "-250px";
 }
 
 // Google Sheets
@@ -58,4 +59,4 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbx22Zfryo7rp8QzsUbLKG
         form.reset()
       })
       .catch(error => console.error('Error!', error.message))
-  }) 
+  })

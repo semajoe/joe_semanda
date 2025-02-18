@@ -1,103 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY PORTFOLIO</title>
-    <link rel="stylesheet" href="./portfolio.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script
-      src="https://kit.fontawesome.com/fdeb912ac0.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
+    <link rel="stylesheet" href="./portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/fdeb912ac0.js" crossorigin="anonymous"></script>
+</head>
+<body>
     <!-- hero section -->
-
-    <header>
-      <h2 class="logo">My Portfolio</h2>
-      <nav>
-        <ul id="side-menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#location">My Location</a></li>
-          <li><a href="#services">My Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <i class="fas fa-xmark" onclick="closemenu()"></i>
-        </ul>
-        <!-- <a href="#" class="btn">Subscribe</a> -->
-        <i class="fas fa-bars" onclick="openmenu()"></i>
-      </nav>
-    </header>
-    <div id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="contact-division">
-            <div class="contact-left">
-              <h1 class="sub-title">Contact Me</h1>
-              <p><i class="fa-solid fa-paper-plane"></i>kirabojoe@gmail.com</p>
-              <p><i class="fa-solid fa-square-phone"></i>+447781127980</p>
+    
+        <header>
+            <h2 class="logo">My Portfolio</h2>
+            <nav>
+                
+                <ul id="side-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#location">My Location</a></li>
+                    <li><a href="#services">My Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
+                </ul> 
+                <!-- <a href="#" class="btn">Subscribe</a> -->
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </header>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-division">
+                        <div class="contact-left">
+                            <h1 class="sub-title ">Contact Me</h1>
+                            <p><i class="fa-solid fa-paper-plane"></i>kirabojoe@gmail.com</p>
+                            <p><i class="fa-solid fa-square-phone"></i>+447781127980</p>
+                        </div>
+                        <a href="./Images/My CV.pdf" download class="btn btn-2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn-2">Submit</button>
+                        </form>
+                        <span id="msg">hello!</span>
+    
+                    </div>
+                </div>
             </div>
-            <a href="./Images/My CV.pdf" download class="btn btn-2"
-              >Download CV</a
-            >
-          </div>
-          <div class="contact-right">
-            <form name="submit-to-google-sheet">
-              <input type="text" name="name" placeholder="Your Name" required />
-              <input
-                type="email"
-                name="email"
-                placeholder="Your Email"
-                required
-              />
-              <textarea
-                name="Message"
-                rows="6"
-                placeholder="Your Message"
-              ></textarea>
-              <button type="submit" class="btn btn-2">Submit</button>
-            </form>
-            <span id="msg">hello!</span>
-          </div>
         </div>
-      </div>
-    </div>
-
-    <footer>
-      <p>Joe Semanda</p>
-      <p>
-        Building you websites in HTML, CSS, and Javascript - Please click on the
-        links below to follow my work and what I do.
-      </p>
-      <div class="social">
-        <a href="https://www.facebook.com/chefjoesk/" target="_blank"
-          ><i class="fa-brands fa-facebook"></i
-        ></a>
-        <a href="https://www.instagram.com/semanda_joe/" target="_blank"
-          ><i class="fa-brands fa-instagram"></i
-        ></a>
-        <a href="https://github.com/semajoe" target="_blank"
-          ><i class="fa-brands fa-github"></i
-        ></a>
-        <a href="https://www.linkedin.com/in/semandajoekirabo/" target="_blank"
-          ><i class="fa-brands fa-linkedin"></i
-        ></a>
-      </div>
-      <p class="end">&copy; Joe Kirabo Semanda</p>
-    </footer>
-    <script src="portfolio.js"></script>
-  </body>
+       
+    
+    
+   
+     <footer>
+        <p>Joe Semanda</p>
+        <p>Building you websites in HTML, CSS, and Javascript - Please click on the links below to follow my work and what I do.</p>
+        <div class="social">
+            <a href="https://www.facebook.com/chefjoesk/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/semanda_joe/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/semajoe" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/semandajoekirabo/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p class="end">&copy; Joe Kirabo Semanda</p>
+     </footer>
+     <script src="portfolio.js"></script>
+</body>
 </html>

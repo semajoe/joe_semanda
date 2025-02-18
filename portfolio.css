@@ -544,4 +544,50 @@ nav .fas{
       #greetings{
         display: none;
       }
+      .tab-titles {
+        flex-direction: column;
+      }
+      .tab-links {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+      .tab-contents ul li {
+        font-size: 14px;
+      }
+      .tab-contents ul li span {
+        font-size: 12px;
+      }
+      .card {
+        width: 100%;
+        margin: 10px 0;
+      }
+      .card i {
+        font-size: 40px;
+      }
+      .card h5 {
+        font-size: 20px;
+      }
+      .pra p {
+        font-size: 14px;
+      }
+      .card .button {
+        padding: 7px 20px;
+      }
+      .contact-me .button-two {
+        padding: 10px 25px;
+      }
+      footer p:nth-child(1) {
+        font-size: 25px;
+      }
+      footer p:nth-child(2) {
+        font-size: 15px;
+      }
+      .social a {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+      }
+      .end {
+        font-size: 12px;
+      }
 }
